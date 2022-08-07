@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CountryTableViewCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CountryTableViewCell" rowHeight="67" id="KGk-i7-Jjw" customClass="CountryTableViewCell" customModule="Countries_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331.5" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YUR-aX-4dI">
+                        <rect key="frame" x="16" y="20" width="299.5" height="27"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turkey" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQD-KG-0RF">
+                                <rect key="frame" x="0.0" y="0.0" width="253.5" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AT9-wX-eVZ">
+                                <rect key="frame" x="269.5" y="0.0" width="30" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="rUw-Kt-6RN" userLabel="width = 40"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="YUR-aX-4dI" secondAttribute="bottom" constant="20" id="5ry-wi-YTi"/>
+                    <constraint firstItem="YUR-aX-4dI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="70D-1g-mQC"/>
+                    <constraint firstItem="YUR-aX-4dI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="kyF-lW-787"/>
+                    <constraint firstAttribute="trailing" secondItem="YUR-aX-4dI" secondAttribute="trailing" constant="16" id="zaI-Wl-cXj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countryName" destination="WQD-KG-0RF" id="8mf-mv-yMB"/>
+                <outlet property="favoriteButton" destination="AT9-wX-eVZ" id="dxf-05-Y17"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="101.45089285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
